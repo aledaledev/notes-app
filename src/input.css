@@ -1,0 +1,6 @@
+@tailwind base;
+@tailwind components;
+.card{
+    @apply flex justify-between items-center px-5 py-4 rounded-md
+}
+@tailwind utilities;

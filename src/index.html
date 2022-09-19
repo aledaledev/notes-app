@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Notes</title>
+    <link href="../dist/output.css" rel="stylesheet" />
+  </head>
+  <body class="bg-orange-400">
+    <main id="app">
+      <div class="flex justify-center gap-2 py-10">
+        <img class="w-7 invert" src="../assets/note.svg" />
+        <h1 class="font-semibold text-3xl text-yellow-50">Notes</h1>
+      </div>
+      <form id="form" class="bg-amber-400 p-10 mx-auto max-w-sm rounded-t-md flex border-x border-t border-amber-700">
+          <input
+            id="input"
+            type="text"
+            class="rounded-l-md w-full py-2 px-5 text-orange-600 bg-orange-50 font-normal"
+            placeholder="Add Note"
+          />
+          <button type="submit" id="add" class="p-2 bg-orange-500 rounded-r-md cursor-pointer">
+            <img class="w-7 invert" src="../assets/add.svg"/>
+          </button>
+      </form>
+      <div id="note-container" class="max-w-sm mx-auto bg-amber-100 px-10 py-5 rounded-b-md flex flex-col gap-5 mb-10 border-x border-b border-amber-700">
+        </div>
+      </div>
+    </main>
+    <script type="module" src="./script.js"></script>
+  </body>
+</html>
